@@ -147,7 +147,7 @@
     <text x="380" y="157" text-anchor="middle" fill="#fca5a5" font-size="7.5" font-weight="600">SUSPECT</text>
     <!-- label outside -->
     <text x="340" y="118" text-anchor="middle" fill="#fca5a5" font-size="9.5" font-weight="700">██████████</text>
-    <text x="340" y="130" text-anchor="middle" fill="#64748b" font-size="8">██████ · 3 aliases</text>
+    <text x="340" y="130" text-anchor="middle" fill="#64748b" font-size="8">██████ · ██ aliases</text>
     <circle cx="380" cy="148" r="24" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.3" style="animation:pulse 2s ease-in-out 2s infinite"/>
   </g>
 
@@ -166,7 +166,7 @@
     <text x="555" y="317" text-anchor="middle" fill="#22c55e" font-size="14">💳</text>
     <text x="555" y="328" text-anchor="middle" fill="#4ade80" font-size="7">ACCOUNT</text>
     <text x="600" y="348" text-anchor="middle" fill="#4ade80" font-size="9.5" font-weight="700">CH-4471 · $4.2M</text>
-    <text x="600" y="360" text-anchor="middle" fill="#64748b" font-size="8">██████ · 12 wires</text>
+    <text x="600" y="360" text-anchor="middle" fill="#64748b" font-size="8">██████ · ██ wires</text>
   </g>
 
   <!-- Node: Viktor -->
@@ -175,7 +175,7 @@
     <text x="545" y="162" text-anchor="middle" fill="#60a5fa" font-size="13">👤</text>
     <text x="545" y="173" text-anchor="middle" fill="#93c5fd" font-size="7">ASSOCIATE</text>
     <text x="592" y="148" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="700">████████</text>
-    <text x="592" y="160" text-anchor="middle" fill="#64748b" font-size="8">██████ · sanctioned</text>
+    <text x="592" y="160" text-anchor="middle" fill="#64748b" font-size="8">██████ · ██████████</text>
   </g>
 
   <!-- Node: OFAC MATCH -->
