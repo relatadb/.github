@@ -146,8 +146,8 @@
     <text x="380" y="145" text-anchor="middle" fill="#ef4444" font-size="14">👤</text>
     <text x="380" y="157" text-anchor="middle" fill="#fca5a5" font-size="7.5" font-weight="600">SUSPECT</text>
     <!-- label outside -->
-    <text x="340" y="118" text-anchor="middle" fill="#fca5a5" font-size="9.5" font-weight="700">Omar Al-Rashid</text>
-    <text x="340" y="130" text-anchor="middle" fill="#64748b" font-size="8">UAE passport · 3 aliases</text>
+    <text x="340" y="118" text-anchor="middle" fill="#fca5a5" font-size="9.5" font-weight="700">██████████</text>
+    <text x="340" y="130" text-anchor="middle" fill="#64748b" font-size="8">██████ · 3 aliases</text>
     <circle cx="380" cy="148" r="24" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.3" style="animation:pulse 2s ease-in-out 2s infinite"/>
   </g>
 
@@ -156,8 +156,8 @@
     <circle cx="360" cy="330" r="18" fill="#120e04" stroke="#eab308" stroke-width="2" filter="url(#f-blue)"/>
     <text x="360" y="327" text-anchor="middle" fill="#eab308" font-size="14">🏢</text>
     <text x="360" y="338" text-anchor="middle" fill="#fde047" font-size="7">SHELL CO</text>
-    <text x="315" y="358" text-anchor="middle" fill="#fde047" font-size="9.5" font-weight="700">AlNoor Trading LLC</text>
-    <text x="315" y="370" text-anchor="middle" fill="#64748b" font-size="8">Dubai · $0 revenue</text>
+    <text x="315" y="358" text-anchor="middle" fill="#fde047" font-size="9.5" font-weight="700">██████████ LLC</text>
+    <text x="315" y="370" text-anchor="middle" fill="#64748b" font-size="8">██████ · $0 revenue</text>
   </g>
 
   <!-- Node: Account CH -->
@@ -166,7 +166,7 @@
     <text x="555" y="317" text-anchor="middle" fill="#22c55e" font-size="14">💳</text>
     <text x="555" y="328" text-anchor="middle" fill="#4ade80" font-size="7">ACCOUNT</text>
     <text x="600" y="348" text-anchor="middle" fill="#4ade80" font-size="9.5" font-weight="700">CH-4471 · $4.2M</text>
-    <text x="600" y="360" text-anchor="middle" fill="#64748b" font-size="8">Zurich · 12 wires</text>
+    <text x="600" y="360" text-anchor="middle" fill="#64748b" font-size="8">██████ · 12 wires</text>
   </g>
 
   <!-- Node: Viktor -->
@@ -174,8 +174,8 @@
     <circle cx="545" cy="165" r="16" fill="#060c18" stroke="#60a5fa" stroke-width="2" filter="url(#f-blue)"/>
     <text x="545" y="162" text-anchor="middle" fill="#60a5fa" font-size="13">👤</text>
     <text x="545" y="173" text-anchor="middle" fill="#93c5fd" font-size="7">ASSOCIATE</text>
-    <text x="592" y="148" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="700">Viktor Kozlov</text>
-    <text x="592" y="160" text-anchor="middle" fill="#64748b" font-size="8">Moscow · sanctioned</text>
+    <text x="592" y="148" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="700">████████</text>
+    <text x="592" y="160" text-anchor="middle" fill="#64748b" font-size="8">██████ · sanctioned</text>
   </g>
 
   <!-- Node: OFAC MATCH -->
@@ -192,7 +192,7 @@
     <circle cx="420" cy="370" r="14" fill="#0e0820" stroke="#a855f7" stroke-width="1.8" filter="url(#f-blue)"/>
     <text x="420" y="367" text-anchor="middle" fill="#a855f7" font-size="12">📱</text>
     <text x="420" y="377" text-anchor="middle" fill="#c084fc" font-size="7">CDR</text>
-    <text x="375" y="396" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600">+971-50-XXX · 847 calls</text>
+    <text x="375" y="396" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600">+XXX-XX-XXX · 847 calls</text>
   </g>
 
   <!-- ── EDGES ── -->
@@ -323,7 +323,7 @@
     <circle cx="252" cy="463" r="9" fill="#ef4444" style="animation:alarm 1.5s ease-in-out 3.5s infinite"/>
     <text x="252" y="467" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="800">!</text>
     <text x="268" y="465" fill="#ef4444" font-size="10" font-weight="800" letter-spacing="0.5">ALERT TRIGGERED · 3ms</text>
-    <text x="230" y="483" fill="#94a3b8" font-size="8.5" xml:space="preserve">  Omar A. → AlNoor LLC → CH-4471 → $4.2M → OFAC SDN list — 6 datasets, full audit trail, provenance locked.</text>
+    <text x="230" y="483" fill="#94a3b8" font-size="8.5" xml:space="preserve">  ██████ → ██████ LLC → CH-4471 → $4.2M → OFAC SDN list — 6 datasets, full audit trail, provenance locked.</text>
     <text x="230" y="496" fill="#64748b" font-size="8" xml:space="preserve">  SELECT * FROM Transaction AS OF '2026-01-15' WITH PROVENANCE WHERE amount &gt; 1000000</text>
   </g>
 
