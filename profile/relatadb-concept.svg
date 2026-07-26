@@ -44,7 +44,7 @@
   <!-- Background -->
   <rect width="920" height="520" fill="url(#bg)" rx="16"/>
 
-  <!-- Dot grid -->
+  <!-- Dot grid v2 -->
   <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
     <circle cx="14" cy="14" r="0.6" fill="#ffffff" opacity="0.055"/>
   </pattern>
