@@ -21,16 +21,13 @@ SELECT * FROM Threat AS OF '2026-01-01' WITH PROVENANCE
 - **Protocol-compatible** — speaks Postgres wire, Bolt, S3, Redis, MongoDB, ClickHouse, Arrow Flight, gRPC, MCP
 - **Self-hosted** — runs on your infrastructure, air-gapped if needed; no cloud dependency
 
-## Products
+## SDKs
 
-| Repo | Description |
-|------|-------------|
-| [RelataDB](https://github.com/relatadb/RelataDB) | Core database — Rust, AGPL-3.0 |
-| [sdk-typescript](https://github.com/relatadb/sdk-typescript) | TypeScript / Node.js SDK |
-| [sdk-python](https://github.com/relatadb/sdk-python) | Python SDK |
-| [sdk-go](https://github.com/relatadb/sdk-go) | Go SDK |
-| [console](https://github.com/relatadb/console) | Web ops console |
-| [portal](https://github.com/relatadb/portal) | Marketing site — [relatadb.dev](https://relatadb.dev) |
+| Repo | Language |
+|------|----------|
+| [sdk-typescript](https://github.com/relatadb/sdk-typescript) | TypeScript / Node.js |
+| [sdk-python](https://github.com/relatadb/sdk-python) | Python |
+| [sdk-go](https://github.com/relatadb/sdk-go) | Go |
 
 ## Get started
 
