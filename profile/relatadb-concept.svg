@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480">
+  <defs>
+    <style>
+      text { font-family: Inter, system-ui, sans-serif; }
+
+      @keyframes fadeIn    { from { opacity:0 } to { opacity:1 } }
+      @keyframes slideUp   { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+      @keyframes popIn     { 0%{opacity:0;transform:scale(0.3)} 60%{transform:scale(1.1)} 100%{opacity:1;transform:scale(1)} }
+      @keyframes drawLine  { from{stroke-dashoffset:300;opacity:0} to{stroke-dashoffset:0;opacity:1} }
+      @keyframes flowDot   { 0%{offset-distance:0%;opacity:0} 15%{opacity:1} 85%{opacity:1} 100%{offset-distance:100%;opacity:0} }
+      @keyframes pulse     { 0%,100%{transform:scale(1);opacity:0.6} 50%{transform:scale(1.4);opacity:0.2} }
+      @keyframes glow      { 0%,100%{filter:drop-shadow(0 0 4px #ef4444)} 50%{filter:drop-shadow(0 0 14px #ef4444)} }
+      @keyframes blink     { 0%,100%{opacity:1} 50%{opacity:0.3} }
+      @keyframes shimmer   { 0%,100%{opacity:0.5} 50%{opacity:1} }
+      @keyframes tagSlide  { from{opacity:0;transform:translateX(-8px)} to{opacity:1;transform:translateX(0)} }
+    </style>
+    <filter id="gb"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gr"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3z" fill="#7c3aed" opacity="0.8"/>
+    </marker>
+    <marker id="arr-red" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3z" fill="#ef4444"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="100%" stop-color="#0b1022"/>
+    </linearGradient>
+    <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="480" fill="url(#bg)" rx="14"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="0.7" fill="#ffffff" opacity="0.07"/>
+  </pattern>
+  <rect width="860" height="480" fill="url(#dots)" rx="14"/>
+
+  <!-- ── HEADER ── -->
+  <g style="animation:slideUp 0.6s ease 0.1s both;opacity:0">
+    <text x="430" y="32" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="600" letter-spacing="3" opacity="0.5">RELATA DB · SOVEREIGN INTELLIGENCE DATABASE</text>
+    <text x="430" y="56" text-anchor="middle" fill="#f1f5f9" font-size="19" font-weight="700">Connect any dataset. Query any moment. See what others miss.</text>
+  </g>
+
+  <!-- ══════════ LEFT PANEL — DATA SOURCES ══════════ -->
+
+  <g style="animation:slideUp 0.5s ease 0.4s both;opacity:0">
+    <text x="80" y="90" text-anchor="middle" fill="#64748b" font-size="9" letter-spacing="2" font-weight="600">DATA SOURCES</text>
+  </g>
+
+  <!-- Source cards -->
+  <!-- People -->
+  <g style="animation:slideUp 0.5s ease 0.5s both;opacity:0">
+    <rect x="18" y="100" width="124" height="34" rx="7" fill="#0f1e38" stroke="#1d4ed8" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="118" fill="#93c5fd" font-size="11">👤</text>
+    <text x="46" y="114" fill="#bfdbfe" font-size="10" font-weight="600">People</text>
+    <text x="46" y="126" fill="#64748b" font-size="8">Passports · IDs · KYC</text>
+  </g>
+
+  <!-- Finance -->
+  <g style="animation:slideUp 0.5s ease 0.65s both;opacity:0">
+    <rect x="18" y="144" width="124" height="34" rx="7" fill="#0f2213" stroke="#16a34a" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="162" fill="#86efac" font-size="11">💳</text>
+    <text x="46" y="158" fill="#bbf7d0" font-size="10" font-weight="600">Transactions</text>
+    <text x="46" y="170" fill="#64748b" font-size="8">SWIFT · IBAN · Crypto</text>
+  </g>
+
+  <!-- Comms -->
+  <g style="animation:slideUp 0.5s ease 0.8s both;opacity:0">
+    <rect x="18" y="188" width="124" height="34" rx="7" fill="#1c1028" stroke="#9333ea" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="206" fill="#d8b4fe" font-size="11">📱</text>
+    <text x="46" y="202" fill="#e9d5ff" font-size="10" font-weight="600">Communications</text>
+    <text x="46" y="214" fill="#64748b" font-size="8">CDRs · Metadata</text>
+  </g>
+
+  <!-- Location -->
+  <g style="animation:slideUp 0.5s ease 0.95s both;opacity:0">
+    <rect x="18" y="232" width="124" height="34" rx="7" fill="#0e1f28" stroke="#0891b2" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="250" fill="#67e8f9" font-size="11">🌍</text>
+    <text x="46" y="246" fill="#a5f3fc" font-size="10" font-weight="600">Locations</text>
+    <text x="46" y="258" fill="#64748b" font-size="8">CCTV · Border · GPS</text>
+  </g>
+
+  <!-- News -->
+  <g style="animation:slideUp 0.5s ease 1.1s both;opacity:0">
+    <rect x="18" y="276" width="124" height="34" rx="7" fill="#201818" stroke="#dc2626" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="294" fill="#fca5a5" font-size="11">📰</text>
+    <text x="46" y="290" fill="#fecaca" font-size="10" font-weight="600">Open Source</text>
+    <text x="46" y="302" fill="#64748b" font-size="8">News · Sanctions · OSINT</text>
+  </g>
+
+  <!-- Corporate -->
+  <g style="animation:slideUp 0.5s ease 1.25s both;opacity:0">
+    <rect x="18" y="320" width="124" height="34" rx="7" fill="#1a1a0e" stroke="#ca8a04" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="338" fill="#fde047" font-size="11">🏢</text>
+    <text x="46" y="334" fill="#fef08a" font-size="10" font-weight="600">Corporate</text>
+    <text x="46" y="346" fill="#64748b" font-size="8">Ownership · Directors</text>
+  </g>
+
+  <!-- Flow lines + animated dots -->
+  <path d="M142,117 C200,117 230,210 295,210" fill="none" stroke="#1d4ed8" stroke-width="1" opacity="0.2"/>
+  <path d="M142,161 C210,161 240,210 295,210" fill="none" stroke="#16a34a" stroke-width="1" opacity="0.2"/>
+  <path d="M142,205 C230,205 260,210 295,210" fill="none" stroke="#9333ea" stroke-width="1" opacity="0.2"/>
+  <path d="M142,249 C210,249 240,210 295,210" fill="none" stroke="#0891b2" stroke-width="1" opacity="0.2"/>
+  <path d="M142,293 C200,293 230,210 295,210" fill="none" stroke="#dc2626" stroke-width="1" opacity="0.2"/>
+  <path d="M142,337 C190,337 230,210 295,210" fill="none" stroke="#ca8a04" stroke-width="1" opacity="0.2"/>
+
+  <circle r="3.5" fill="#93c5fd" style="offset-path:path('M142,117 C200,117 230,210 295,210');animation:flowDot 2.8s ease-in-out 0.2s infinite"/>
+  <circle r="3.5" fill="#86efac" style="offset-path:path('M142,161 C210,161 240,210 295,210');animation:flowDot 2.8s ease-in-out 0.7s infinite"/>
+  <circle r="3.5" fill="#d8b4fe" style="offset-path:path('M142,205 C230,205 260,210 295,210');animation:flowDot 2.8s ease-in-out 1.2s infinite"/>
+  <circle r="3.5" fill="#67e8f9" style="offset-path:path('M142,249 C210,249 240,210 295,210');animation:flowDot 2.8s ease-in-out 1.7s infinite"/>
+  <circle r="3.5" fill="#fca5a5" style="offset-path:path('M142,293 C200,293 230,210 295,210');animation:flowDot 2.8s ease-in-out 2.2s infinite"/>
+  <circle r="3.5" fill="#fde047" style="offset-path:path('M142,337 C190,337 230,210 295,210');animation:flowDot 2.8s ease-in-out 2.7s infinite"/>
+
+  <!-- ══════════ CENTER — RELATA CORE ══════════ -->
+
+  <!-- Glow backdrop -->
+  <circle cx="310" cy="210" r="80" fill="url(#rg1)" style="animation:shimmer 3s ease-in-out infinite"/>
+
+  <!-- Core rings -->
+  <circle cx="310" cy="210" r="60" fill="none" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.3" style="animation:shimmer 5s linear infinite"/>
+  <circle cx="310" cy="210" r="48" fill="#0d0b24" stroke="#7c3aed" stroke-width="2" filter="url(#gb)" style="animation:popIn 0.8s ease 0.3s both;opacity:0"/>
+
+  <!-- Core text -->
+  <g style="animation:fadeIn 1s ease 1s both;opacity:0">
+    <text x="310" y="203" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">Relata DB</text>
+    <text x="310" y="216" text-anchor="middle" fill="#a78bfa" font-size="7.5" letter-spacing="1.5">KNOWLEDGE CORE</text>
+    <!-- mini badges -->
+    <rect x="271" y="222" width="36" height="11" rx="3" fill="#1e1b4b"/>
+    <text x="289" y="230" text-anchor="middle" fill="#818cf8" font-size="6.5">bi-temporal</text>
+    <rect x="311" y="222" width="30" height="11" rx="3" fill="#1e1b4b"/>
+    <text x="326" y="230" text-anchor="middle" fill="#818cf8" font-size="6.5">governed</text>
+  </g>
+
+  <!-- Arrow core → graph -->
+  <path d="M360,210 L420,210" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr)" stroke-dasharray="300" style="animation:drawLine 0.6s ease 1.6s both;opacity:0"/>
+
+  <!-- ══════════ RIGHT — KNOWLEDGE GRAPH ══════════ -->
+
+  <!-- Section label -->
+  <g style="animation:fadeIn 0.6s ease 1.8s both;opacity:0">
+    <text x="640" y="78" text-anchor="middle" fill="#64748b" font-size="9" letter-spacing="2" font-weight="600">KNOWLEDGE GRAPH — LIVE INVESTIGATION</text>
+  </g>
+
+  <!-- ── NODES ── -->
+  <!-- Node: Omar Al-Rashid (suspect hub) -->
+  <g style="animation:popIn 0.5s ease 2.0s both;opacity:0">
+    <circle cx="560" cy="170" r="22" fill="url(#rg2)" style="animation:glow 2s ease-in-out 2.5s infinite"/>
+    <circle cx="560" cy="170" r="18" fill="#2d0f0f" stroke="#ef4444" stroke-width="2"/>
+    <text x="560" y="167" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="700">SUSPECT</text>
+    <text x="560" y="179" text-anchor="middle" fill="#ef4444" font-size="8">Omar A.</text>
+    <!-- pulse rings -->
+    <circle cx="560" cy="170" r="22" fill="none" stroke="#ef4444" stroke-width="1.5" style="animation:pulse 1.8s ease-in-out 2.5s infinite"/>
+  </g>
+
+  <!-- Node: Shell Co Dubai -->
+  <g style="animation:popIn 0.5s ease 2.2s both;opacity:0">
+    <circle cx="490" cy="280" r="15" fill="#1a1508" stroke="#ca8a04" stroke-width="1.5"/>
+    <text x="490" y="277" text-anchor="middle" fill="#fde047" font-size="7.5" font-weight="600">Shell Co</text>
+    <text x="490" y="287" text-anchor="middle" fill="#fef08a" font-size="7">Dubai</text>
+  </g>
+
+  <!-- Node: Viktor (associate) -->
+  <g style="animation:popIn 0.5s ease 2.35s both;opacity:0">
+    <circle cx="650" cy="150" r="14" fill="#0f1a28" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="650" y="147" text-anchor="middle" fill="#93c5fd" font-size="7.5" font-weight="600">Viktor K.</text>
+    <text x="650" y="157" text-anchor="middle" fill="#60a5fa" font-size="7">Moscow</text>
+  </g>
+
+  <!-- Node: Account CH-4471 -->
+  <g style="animation:popIn 0.5s ease 2.5s both;opacity:0">
+    <circle cx="680" cy="250" r="14" fill="#0a1f10" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="680" y="247" text-anchor="middle" fill="#86efac" font-size="7.5" font-weight="600">CH-4471</text>
+    <text x="680" y="257" text-anchor="middle" fill="#4ade80" font-size="7">$4.2M</text>
+  </g>
+
+  <!-- Node: Border crossing -->
+  <g style="animation:popIn 0.5s ease 2.65s both;opacity:0">
+    <circle cx="590" cy="330" r="13" fill="#0a1c22" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="590" y="327" text-anchor="middle" fill="#67e8f9" font-size="7.5" font-weight="600">Border</text>
+    <text x="590" y="337" text-anchor="middle" fill="#22d3ee" font-size="7">UAE→TR</text>
+  </g>
+
+  <!-- Node: News match -->
+  <g style="animation:popIn 0.5s ease 2.8s both;opacity:0">
+    <circle cx="720" cy="330" r="13" fill="#1c0808" stroke="#f87171" stroke-width="1.5" style="animation:blink 2s ease-in-out 3s infinite"/>
+    <text x="720" y="327" text-anchor="middle" fill="#fca5a5" font-size="7.5" font-weight="600">Sanctions</text>
+    <text x="720" y="337" text-anchor="middle" fill="#f87171" font-size="7">OFAC hit</text>
+  </g>
+
+  <!-- Node: Phone -->
+  <g style="animation:popIn 0.5s ease 2.95s both;opacity:0">
+    <circle cx="460" cy="170" r="12" fill="#180f28" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="460" y="167" text-anchor="middle" fill="#d8b4fe" font-size="7.5" font-weight="600">CDR</text>
+    <text x="460" y="177" text-anchor="middle" fill="#c084fc" font-size="7">+971-XX</text>
+  </g>
+
+  <!-- ── EDGES ── -->
+  <g style="animation:drawLine 0.8s ease 2.1s both;opacity:0;stroke-dasharray:300">
+    <!-- Omar → Shell Co -->
+    <line x1="546" y1="186" x2="500" y2="267" stroke="#ca8a04" stroke-width="1.5" opacity="0.8"/>
+    <!-- Omar → Viktor -->
+    <line x1="578" y1="160" x2="636" y2="155" stroke="#3b82f6" stroke-width="1.5" opacity="0.8"/>
+    <!-- Viktor → Account -->
+    <line x1="662" y1="162" x2="672" y2="237" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+    <!-- Shell Co → Account -->
+    <line x1="504" y1="271" x2="667" y2="253" stroke="#22c55e" stroke-width="1.5" opacity="0.7"/>
+    <!-- Omar → Border -->
+    <line x1="552" y1="188" x2="586" y2="318" stroke="#06b6d4" stroke-width="1.5" opacity="0.8"/>
+    <!-- Account → Sanctions -->
+    <line x1="694" y1="261" x2="714" y2="318" stroke="#ef4444" stroke-width="2" opacity="0.9" marker-end="url(#arr-red)"/>
+    <!-- Phone → Omar -->
+    <line x1="472" y1="170" x2="541" y2="170" stroke="#a855f7" stroke-width="1.5" opacity="0.8"/>
+    <!-- Border → Sanctions -->
+    <line x1="602" y1="335" x2="707" y2="335" stroke="#f87171" stroke-width="1.5" opacity="0.7"/>
+  </g>
+
+  <!-- ── EDGE LABELS ── -->
+  <g style="animation:fadeIn 0.8s ease 3.2s both;opacity:0">
+    <rect x="501" y="219" width="50" height="12" rx="3" fill="#0d0f1a" opacity="0.85"/>
+    <text x="526" y="228" text-anchor="middle" fill="#ca8a04" font-size="7">OWNS →</text>
+
+    <rect x="596" y="150" width="48" height="12" rx="3" fill="#0d0f1a" opacity="0.85"/>
+    <text x="620" y="159" text-anchor="middle" fill="#60a5fa" font-size="7">CALLED →</text>
+
+    <rect x="568" y="258" width="56" height="12" rx="3" fill="#0d0f1a" opacity="0.85"/>
+    <text x="596" y="267" text-anchor="middle" fill="#22c55e" font-size="7">SENDS $$ →</text>
+
+    <rect x="690" y="282" width="42" height="12" rx="3" fill="#200a0a" opacity="0.9"/>
+    <text x="711" y="291" text-anchor="middle" fill="#ef4444" font-size="7" font-weight="600">⚠ MATCH</text>
+  </g>
+
+  <!-- ── INSIGHT CALLOUT ── -->
+  <g style="animation:slideUp 0.7s ease 3.8s both;opacity:0">
+    <rect x="420" y="390" width="360" height="58" rx="8" fill="#0f0a1f" stroke="#7c3aed" stroke-width="1" opacity="0.95"/>
+    <circle cx="439" cy="407" r="8" fill="#ef4444" style="animation:glow 1.5s ease-in-out 4s infinite"/>
+    <text x="452" y="411" fill="#ef4444" font-size="10" font-weight="700">ALERT TRIGGERED</text>
+    <text x="420" y="427" fill="#94a3b8" font-size="8.5" xml:space="preserve">  Omar A. → Shell Co Dubai → CH-4471 → OFAC Sanctions list</text>
+    <text x="420" y="442" fill="#64748b" font-size="8" xml:space="preserve">  Cross-border + $4.2M wire + sanctions match · found in 3ms across 6 datasets</text>
+  </g>
+
+  <!-- ── TEMPORAL QUERY PILL ── -->
+  <g style="animation:tagSlide 0.7s ease 4.4s both;opacity:0">
+    <rect x="420" y="360" width="280" height="20" rx="5" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="432" y="374" fill="#475569" font-size="8">SELECT * FROM</text>
+    <text x="500" y="374" fill="#7c3aed" font-size="8" font-weight="600">Transaction</text>
+    <text x="553" y="374" fill="#475569" font-size="8">AS OF</text>
+    <text x="577" y="374" fill="#4ade80" font-size="8">'2026-01-15'</text>
+    <text x="626" y="374" fill="#475569" font-size="8">WITH PROVENANCE</text>
+  </g>
+
+  <!-- ── BOTTOM ROW — PROPERTY TAGS ── -->
+  <g style="animation:fadeIn 1s ease 4.8s both;opacity:0">
+    <rect x="20"  y="390" width="80"  height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="60"  y="402" text-anchor="middle" fill="#4ade80" font-size="8">✓ Bi-temporal</text>
+
+    <rect x="108" y="390" width="70"  height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="143" y="402" text-anchor="middle" fill="#a78bfa" font-size="8">✓ Governed</text>
+
+    <rect x="186" y="390" width="80"  height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="226" y="402" text-anchor="middle" fill="#38bdf8" font-size="8">✓ Self-hosted</text>
+
+    <rect x="274" y="390" width="90"  height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="319" y="402" text-anchor="middle" fill="#fb923c" font-size="8">✓ Any protocol</text>
+
+    <rect x="20"  y="416" width="100" height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="70"  y="428" text-anchor="middle" fill="#f472b6" font-size="8">✓ Full audit trail</text>
+
+    <rect x="128" y="416" width="100" height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="178" y="428" text-anchor="middle" fill="#facc15" font-size="8">✓ 6 query languages</text>
+
+    <rect x="236" y="416" width="130" height="18" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="301" y="428" text-anchor="middle" fill="#34d399" font-size="8">✓ Rust · AGPL-3.0 · ZySec.AI</text>
+  </g>
+
+  <!-- ── BOTTOM WATERMARK ── -->
+  <text x="430" y="470" text-anchor="middle" fill="#1e293b" font-size="8" letter-spacing="2">RELATADB.DEV</text>
+</svg>
