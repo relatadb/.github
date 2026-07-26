@@ -1,17 +1,19 @@
-# Relata DB
+# Relata DB — The Next-Gen Sovereign Intelligence Database
 
-**Frontier Sovereign Intelligence Database**  
+**Not just a database. A governed, temporal knowledge graph that connects anything, remembers everything, and forgets on command.**  
 *A [ZySec.AI](https://github.com/ZySec-AI) product — Your AI. Your Data. Your Terms.*
 
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/relatadb/.github/main/profile/relatadb-concept.svg" alt="Relata DB — connect any dataset, query any moment" width="860"/>
+  <img src="https://raw.githubusercontent.com/relatadb/.github/main/profile/relatadb-concept.svg" alt="Relata DB — sovereign intelligence database" width="920"/>
 </p>
 
 ---
 
-Governed temporal knowledge database where **policy, provenance, and bi-temporal history are in the query path** — not bolted on top. Built for intelligence, security, and compliance workloads that cannot compromise on auditability or data sovereignty.
+## The database built for the intelligence era
+
+Every row carries **who, what, when, why** — governed by policy, linked by graph, recalled by agents. Query across time. Audit everything. Own it all.
 
 ## Get started in seconds
 
@@ -24,14 +26,6 @@ pip install relata-sdk                        # Python
 npm install @zysec-ai/relata-sdk              # TypeScript
 go get github.com/relatadb/sdk-go             # Go
 ```
-
-## What makes it different
-
-- **Bi-temporal** — every row carries valid-time and system-time; query any point in history
-- **Governed** — Cedar-inspired ABAC, cell masking, and PURPOSE-tagged queries in the execution path
-- **Multi-modal** — relational, graph, vector, full-text, and identity in one store
-- **Protocol-compatible** — Postgres wire, Bolt, S3, Redis, MongoDB, ClickHouse, Arrow Flight, MCP
-- **Self-hosted** — runs on your infrastructure, air-gapped if needed; no cloud dependency
 
 ## SDKs
 
